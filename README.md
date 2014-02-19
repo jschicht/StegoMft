@@ -65,20 +65,31 @@ Hiding inputfile.ext in $MFT from record number 666 at volume D: with signature 
 StegoMft.exe -hide c:\inputfile.ext D: 666 11223344 0
 
 Extracting hidden data from volume D: starting from record number 777 and signature 88888888 starting at slack byte 10 to outputfile.ext:
+
 StegoMft.exe -extract c:\outputfile D: 777 88888888 10
 
+
 Check number of record slack bytes in $MFT starting at slack byte 20 on volume D:
+
 StegoMft.exe -check D: - - 20
 
+
 Check number of record slack bytes in $MFT records 345-350 starting at slack byte 10 on volume D:
+
 StegoMft.exe -check D: 345 350 10
 
+
 Overwrite all record slack in $MFT at volume D:
+
 StegoMft.exe -clean D: - - 0
 
+
 Overwrite record slack from byte 4 in $MFT records 200-300 at volume D:
+
 StegoMft.exe -clean D: 200 300 4
 
+
 Dump to console the slack data in record 50 at volume D:
+
 StegoMft.exe -dump D: 50
 
