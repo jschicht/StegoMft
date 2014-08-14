@@ -1,0 +1,1 @@
+v1.0.0.3: Implemented a kernel mode driver to overcome some of the restrictions in previous versions. Added support for "the newish" MFT record sizes of 4096 bytes.
